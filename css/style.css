@@ -26,14 +26,14 @@ text-shadow:1px 1px 0 #444
   text-shadow:1px 1px 0 #444
 
 }
-.text-large{
+.text-heading-underline{
   display:inline-block;
   border-bottom:2px solid #fff;
   padding-bottom:2px;
   color:#ffffff;
   font-size: 2em;
   font-family: 'Roboto',serif;
-  text-shadow:2px 2px 0px #444
+  text-shadow:2px 2px 0 #444
 
 }
 .margin-below{
@@ -44,7 +44,7 @@ text-shadow:1px 1px 0 #444
     }
 
     .carousel-indicators li {
-  //background-color: #004D40;
+  background-color: #004D40;
   background-color: rgba(70,70,70,.25);
 }
 
