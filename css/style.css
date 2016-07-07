@@ -1,21 +1,33 @@
 # Empty CSS file for your own CSS
-
+body{
+  font-size: 100%;
+}
 .centering{
 float:none;
 margin:0 auto
 }
-.pics {
-  width: 100%;
-}
-.carousel-inner{
-  width:100%;
-  max-height: 100% !important;
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
 .text-heading{
 color:#FFFFFF;
 font-size: 2em;
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', serif;
+font-weight: 400;
+text-shadow:1px 1px 0 #333
 }
 .text-normal{
+  color:#efefef;
+  font-size: 1.2em;
+  font-family: 'Roboto', serif;
+  font-weight: 100;
+  text-shadow:1px 1px 0 #333
 
 }
+  .jumbotron {
+      margin-bottom:0;
+    }
