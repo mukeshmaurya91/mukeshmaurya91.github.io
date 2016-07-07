@@ -17,17 +17,37 @@ margin:0 auto
 color:#FFFFFF;
 font-size: 2em;
 font-family: 'Roboto', serif;
-font-weight: 400;
-text-shadow:1px 1px 0 #333
+text-shadow:1px 1px 0 #444
 }
 .text-normal{
   color:#efefef;
   font-size: 1.2em;
   font-family: 'Roboto', serif;
-  font-weight: 100;
-  text-shadow:1px 1px 0 #333
+  text-shadow:1px 1px 0 #444
 
+}
+.text-large{
+  display:inline-block;
+  border-bottom:2px solid #fff;
+  padding-bottom:2px;
+  color:#ffffff;
+  font-size: 2em;
+  font-family: 'Roboto',serif;
+  text-shadow:2px 2px 0px #444
+
+}
+.margin-below{
+  margin-bottom: 20px;
 }
   .jumbotron {
       margin-bottom:0;
     }
+
+    .carousel-indicators li {
+  //background-color: #004D40;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #880E4F;
+}
