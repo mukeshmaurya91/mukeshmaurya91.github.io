@@ -10,25 +10,6 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <script>
-    function count(){
-  //     $.get("http://localhost/counter/counter.php", {}, function(results){
-  // alert(results); // will show the HTML from anotherPage.html
-  //alert($(results).find("div.scores").html()); // show "scores" div in results
-  $.ajax({
-            type: 'POST',
-            url: 'http://localhost/counter/counter.php',
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            success: function(response) {
-                // alert(JSON.stringify(response));
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
-      }
-</script>
 </head>
 
 <body onload="count()">
