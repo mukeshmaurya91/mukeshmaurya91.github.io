@@ -10,9 +10,28 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script>
+    function count(){
+  //     $.get("http://localhost/counter/counter.php", {}, function(results){
+  // alert(results); // will show the HTML from anotherPage.html
+  //alert($(results).find("div.scores").html()); // show "scores" div in results
+  $.ajax({
+            type: 'POST',
+            url: 'http://localhost/counter/counter.php',
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            success: function(response) {
+                // alert(JSON.stringify(response));
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+      }
+</script>
 </head>
 
-<body>
+<body onload="count()">
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -171,6 +190,23 @@
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="https://lh3.googleusercontent.com/KZgKJzfJFiOh6u5y1cqCphH8MpzUXg0pOTT3rLySU3gNOiwu_QoPJHpUUzZiPxzGQA=h300-rw"  />
+                        <img src="https://lh3.googleusercontent.com/tMn-P52TIGNk4rNAwJFn5t1jrtFqUDQR0C3RglQ6eVLCyCBo1UJ4C5QyKcqtk2eeSg=h300-rw" />
+
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>ShopCash : Coupons &amp; Deals</h3>
+                        <p>
+                          Save money online with Shopcash! Browse through our free coupons, discount codes and cashback offers from popular brands and leading stores in India. </p>
+                        <a href="https://play.google.com/store/apps/details?id=software.twist.shopcash">View Project on Play Store</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="https://github.com/mukeshmaurya91/News_Feed/raw/master/Screenshot_1.png" height="300px"/>
@@ -200,6 +236,22 @@
 
                         </p>
                         <a href="https://github.com/mukeshmaurya91/Weather-App">View Project on Github</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/web_1.png" height="300px"/>
+                        <img src="images/web_2.png" height="300px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Asia Art Festival</h3>
+                        <p>
+                        Asia Art Festival 2017 is going to embark on a journey imbued with creative pursuits aimed at elevating the spirit of humanity through its collaboration with art organizations and individual artists from all over the region.
+                        </p>
+                        <a href="http://asiaartfestival.in">View live project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -255,6 +307,7 @@
                     <p>
                         Copyright &copy; 2017 mukesh kumar maurya
                     </p>
+                    <p id="count"></p>
                 </div>
                 <div class="col-sm-2 top">
                     <span id="to-top">
